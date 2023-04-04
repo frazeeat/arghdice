@@ -1,7 +1,9 @@
-[package]
-name = "arghdice"
-version = "0.1.0"
-edition = "2021"
+[workspace]
+members = [
+  "arghdicelib",
+]
 
-[dependencies]
-rand = "0.8.5"
+[profile.release]
+opt-level = 3
+lto = "fat"
+debug = 1
