@@ -1,6 +1,7 @@
 [workspace]
 members = [
   "arghdicelib",
+  "arghdiceserver",
 ]
 
 [profile.release]
